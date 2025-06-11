@@ -1,0 +1,79 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Women's Legal Aid - India</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/js/all.min.js"></script>
+</head>
+<body>
+    <header>
+        <h1>Women's Legal Aid <i class="fas fa-balance-scale"></i></h1>
+        <p>Empowering women with legal rights and protection</p>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="#rights">Know Your Rights</a></li>
+            <li><a href="#help">Get Legal Help</a></li>
+            <li><a href="#advisors">Legal Advisors</a></li>
+            <li><a href="#resources">Resources</a></li>
+        </ul>
+    </nav>
+
+    <section id="rights" class="section">
+        <h2>Know Your Rights (Indian Laws)</h2>
+        <select id="rights-category" class="styled-select" onchange="showRights()">
+            <option value="">Select a category</option>
+            <option value="domestic">Domestic Violence</option>
+            <option value="workplace">Workplace Harassment</option>
+            <option value="divorce">Divorce & Child Custody</option>
+            <option value="property">Property & Inheritance Rights</option>
+            <option value="sexual">Sexual Harassment & Assault</option>
+            <option value="dowry">Dowry & Marriage Rights</option>
+        </select>
+        <p id="rights-info" class="info-box"></p>
+    </section>
+
+    <section id="help" class="section">
+        <h2>Get Legal Help</h2>
+        <form id="legal-aid-form">
+            <input type="text" id="name" class="styled-input" placeholder="Your Name" required>
+            <input type="email" id="email" class="styled-input" placeholder="Your Email" required>
+            <textarea id="issue" class="styled-textarea" placeholder="Describe your legal issue" required></textarea>
+            <button type="submit" class="btn">Request Help</button>
+        </form>
+        <p id="response" class="info-box"></p>
+        <div id="instant-info" class="info-box"></div>
+    </section>
+
+    <section id="advisors" class="section">
+        <h2>Legal Advisors Contact</h2>
+        <div id="advisor-list">
+            <ul>
+                <li><strong>Adv. Ramesh Gupta</strong> - Ph: +91 9876543210</li>
+                <li><strong>Adv. Priya Sharma</strong> - Ph: +91 9876543211</li>
+                <li><strong>Adv. Sunita Mehta</strong> - Ph: +91 9876543212</li>
+                <li><strong>Adv. Vikram Rao</strong> - Ph: +91 9876543213</li>
+            </ul>
+            <button onclick="requestCall()" class="btn">Request a Call from a Legal Advisor</button>
+        </div>
+    </section>
+
+    <section id="resources" class="section">
+        <h2>Resources & Emergency Contacts</h2>
+        <div class="grid-container">
+            <div class="grid-item"><strong>National Women's Helpline:</strong> 1091</div>
+            <div class="grid-item"><strong>Domestic Violence Helpline:</strong> 181</div>
+            <div class="grid-item"><strong>Cyber Crime Helpline:</strong> 155260</div>
+            <div class="grid-item"><strong>Police Helpline:</strong> 100</div>
+        </div>
+    </section>
+
+    <footer>
+        <p>© 2025 Women's Legal Aid. All rights reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
